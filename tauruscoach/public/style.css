@@ -1,0 +1,592 @@
+ul {
+  /* list-style-position: outside;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px; */
+  margin: 20px;
+  padding: 2px;
+  margin-bottom: 10px;
+}
+.my-flex-card > div > div.card {
+  height: calc(100% - 15px);
+  margin-bottom: 15px;
+}
+
+ul li {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.container4 {
+  margin-top: 30px;
+}
+.container5 {
+  background-color: #014487 !important;
+  margin-top: 80px;
+}
+.description1 {
+  align-items: center;
+}
+.description1 button {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.description1 h2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #014487 !important;
+  font-family: "Roboto", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 46px;
+  color: #ffffff !important;
+  letter-spacing: 4px;
+  line-height: 1.2em;
+  text-align: center;
+}
+.description1 h5 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #014487 !important;
+  color: white;
+  text-align: center;
+}
+.btn-warning.custom-btn {
+  color: #000000 !important;
+  border-color: #ffffff;
+  border-radius: 0px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif !important;
+  font-weight: 700 !important;
+  background-color: #ffb500;
+}
+.btn-success.custom-btn {
+  color: #000000 !important;
+  border-color: #ffffff;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif !important;
+  font-weight: 700 !important;
+  background-color: #96f1ff;
+}
+
+.btn-success:hover.custom-btn {
+  background-color: #96f1ff;
+  border-color: #ffffff;
+}
+
+.btn-danger.custom-btn {
+  color: #ffffff !important;
+  border-radius: 12px;
+  letter-spacing: 0.2px;
+  font-size: 15px;
+  font-weight: 600 !important;
+  background-color: #fc4a1a;
+  border-radius: 10px !important;
+  border: 2px solid #fff !important;
+  margin-right: 30px !important;
+  margin-left: 30px;
+  margin-bottom: 40px !important;
+  width: 210px !important;
+  transition: 0.4s;
+}
+.btn-danger:hover.custom-btn {
+  border: 2px solid #fc4a1a !important;
+}
+.exp {
+  padding: 10px !important;
+}
+
+.container2 {
+  background-color: #032680;
+}
+.container-fluid {
+  box-shadow: 1px 1px 1px 1px white;
+}
+.container-fluid1 {
+  text-align: center;
+}
+.container3 h1 {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+.container3 button {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.container1 {
+  background-color: #fafa6b;
+  text-align: center;
+  padding-bottom: 10px;
+  box-shadow: 1px 1px 1px 1px white;
+}
+.description {
+  background: url("/assets/images/TC_Front_Banner_6.jpg") no-repeat bottom right;
+  background-size: cover;
+  color: white;
+  padding: 50px;
+  padding-top: 50px !important;
+  letter-spacing: 1px !important;
+}
+
+.banner-heading {
+  font-size: 34px;
+  font-family: "Roboto", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: bolder;
+  color: #ffffff;
+  line-height: 40px;
+}
+
+.banner-content {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif;
+  color: #ffffff;
+}
+.banner-subhead {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif;
+  color: #ffffff;
+  margin-top: 50px;
+}
+
+.navbar {
+  padding: 0px !important;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000 !important;
+}
+
+.navbar-light {
+  background-color: #ffffff !important;
+}
+
+.nav-link {
+  color: #000000 !important;
+}
+
+.btn-primary.custom-btn {
+  border-radius: 10px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif !important;
+  color: #ffffff !important;
+  color: #ffffff !important;
+  letter-spacing: 0.5px !important;
+  background-color: #fc4a1a !important;
+  border: 2px solid #fff !important;
+  margin-right: 30px !important;
+  margin-bottom: 10px !important;
+  width: 200px !important;
+
+  transition: 0.4s;
+}
+.btn-primary:hover.custom-btn {
+  border: 2px solid #fc4a1a !important;
+}
+.discount {
+  color: black;
+  margin-top: 20px;
+}
+.btn-dark {
+  margin-top: 30px;
+}
+.contain {
+  text-align: center;
+}
+.contain h1 {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Roboto", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #1e40ca !important;
+  letter-spacing: 2px;
+  line-height: 1.2em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.contain h1 {
+  margin-top: 60px;
+  color: #f2d622;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.contain h1::after {
+  content: "";
+  height: 2px;
+  width: 20%;
+  background: #f2d622;
+  position: absolute;
+  left: calc(50% - 10%);
+  bottom: -5px;
+  /*   another way you can achieve this
+    Check this link: 
+    https://goo.gl/GgRdjz
+    
+    */
+}
+.contain h6 {
+  margin-left: 35px;
+  margin-right: 35px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+}
+.contain-color {
+  text-align: center;
+  background-color: #fafafa !important;
+}
+.contain-color h4 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: #fafafa !important;
+}
+.contain-color1 {
+  text-align: center;
+  background-color: #f1f5f7 !important;
+}
+.contain-color1 h1 {
+  margin-top: 60px;
+  color: #f2d622;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.contain-color1 h1::after {
+  content: "";
+  height: 2px;
+  width: 20%;
+  background: #f2d622;
+  position: absolute;
+  left: calc(50% - 10%);
+  bottom: -5px;
+  /*   another way you can achieve this
+    Check this link: 
+    https://goo.gl/GgRdjz
+    
+    */
+}
+
+.contain-color1 img {
+  margin-top: 70px;
+}
+.contain-color h1 {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Roboto", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #1e40ca !important;
+  letter-spacing: 2px;
+  line-height: 1.2em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contain-color h1 {
+  color: #f2d622;
+  display: inline-block;
+  position: relative;
+}
+
+.contain-color h1::after {
+  content: "";
+  height: 2px;
+  width: 20%;
+  background: #f2d622;
+  position: absolute;
+  left: calc(50% - 10%);
+  bottom: -5px;
+  /*   another way you can achieve this
+    Check this link: 
+    https://goo.gl/GgRdjz
+    
+    */
+}
+.contain-color h6 {
+  margin-left: 35px;
+  margin-right: 35px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+}
+.data {
+  background-color: #014487 !important;
+  text-align: center;
+}
+/* .data  {
+    background-color: #032680;
+  } */
+.data h2 {
+  color: white;
+  margin-top: 40px;
+  margin-right: 50px;
+}
+.data h6 {
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  margin-right: 50px;
+}
+.know {
+  background-color: #f1f5f7 !important;
+  text-align: center;
+  text-decoration: none;
+}
+.know h1 {
+  text-decoration: none;
+}
+.know h6 {
+  text-decoration: none;
+}
+
+.container3-color {
+  background-color: #f1f5f7 !important;
+}
+.details {
+  color: white;
+  margin-top: 60px;
+  background-color: #014487 !important;
+}
+.details h4 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: #014487 !important;
+}
+
+.form {
+  background-color: rgba(2, 221, 255, 0.41) !important;
+  text-align: center;
+}
+.form h3 {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+.form h6 {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.foot {
+  background: url("/assets/images/Front_Page_Header4_1600X725.jpg");
+
+  text-align: center;
+}
+.foot h4 {
+  color: white;
+  align-items: center;
+}
+.foot h6 {
+  color: white;
+  text-align: center;
+}
+.footer {
+  background-color: #30302e;
+  color: white;
+  text-align: center;
+}
+.footer h5 {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.btn-info.custom-btn {
+  background-color: #fc4a1a;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.btn-info:hover.custom-btn {
+  background-color: #fc4a1a;
+}
+.btn-secondary.custom-btn {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.login-form {
+  margin-top: 80px;
+}
+.register-info {
+  margin-top: 60px;
+  background-color: #ede9dd;
+}
+.register-info h6 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.register-info h5 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.btn-link.btn-anchor {
+  outline: none !important;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+.box-container4 {
+  display: block;
+  max-height: 50em;
+  min-height: 33em;
+  max-width: 35em;
+  min-width: 25em;
+  box-shadow: 0px 0px 10px 2px;
+  border-radius: 6px;
+  padding: 24px;
+  position: fixed;
+  width: 50%;
+  height: 75%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.icon {
+  color: #0c71c3;
+  background-color: #ffffff;
+  border-color: #0c71c3;
+  font-family: ETmodules;
+  content: attr(data-icon);
+
+  font-weight: 400;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 96px;
+  font-style: normal;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.circle-icon {
+  color: #0c71c3;
+  background-color: #ffffff;
+  border-color: #0c71c3;
+  font-family: ETmodules;
+  content: attr(data-icon);
+
+  font-weight: 400;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 96px;
+  font-style: normal;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-color: #0c71c3;
+  background: #ede9dd;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 25px;
+}
+
+/* 
+    Colors:
+    https://coolors.co/22223b-4a4e69-eadae4-9a8c98-c9ada7 
+  */
+/*
+  YANKEES BLUE: #22223B
+  INDEPENDENCE: #4A4E69
+  PLATINUM: #EADAE4
+  SPANISH GRAY: #9A8C98
+  SILVER PINK: #C9ADA7
+  */
+
+/* .wrapper {
+    height: 97vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4a4e69;
+  }
+  
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    max-width: 80%;
+    min-width: 100px;
+    min-height: 400px;
+    padding: 20px 40px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 36px #222;
+    background-color: #fefefe;
+  }
+  
+  .form-wrapper > h2 {
+    display: flex;
+    justify-content: center;
+    font-family: "Segoe UI", "Ubuntu", "Roboto", "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: 2em;
+    font-weight: lighter;
+    margin-top: 0.25em;
+    color: #222;
+  }
+  
+  form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  } */
+
+.info {
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+label {
+  margin-bottom: 0.5em;
+  color: #444;
+  font-weight: lighter;
+}
+
+input {
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #d6d1d5;
+}
+
+input::placeholder {
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: #bbb;
+}
+
+input.error {
+  border: 1px solid #eadae4;
+}
+
+.error {
+  color: #db2269;
+  font-size: 1em;
+  display: relative;
+}
