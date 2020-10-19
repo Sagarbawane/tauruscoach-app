@@ -1,4 +1,4 @@
-const User = require("../Models/user");
+const User = require("../models/user");
 const jwt = require("jsonwebtoken");
 const bcryptjs = require("bcryptjs");
 
@@ -33,7 +33,7 @@ userController.login = (req, res) => {
             const tokenData = {
               id: user._id,
             };
-            const token = jwt.sign(tokenData, "taurusoach", {
+            const token = jwt.sign(tokenData, "taurusCoach", {
               expiresIn: "2d",
             });
             res.json({
@@ -50,6 +50,27 @@ userController.login = (req, res) => {
     })
     .catch((err) => {
       res.json(err);
+    });
+};
+userController.account = (req, res) => {
+  const id = req.userId;
+  User.findById(id)
+    .then((user) => {
+      res.json(user);
+    })
+    .catch((err) => {
+      res.json(err);
+    });
+};
+userController.logout = (req, res) => {
+  console.log(req);
+  const { user, token } = req;
+  User.findByIdAndUpdate(req.userId, { $pull: { tokens: { token: token } } })
+    .then(function () {
+      res.send({ notice: "successfully logged out" });
+    })
+    .catch(function (err) {
+      res.send(err);
     });
 };
 

@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import configureStore from "./client/store/configureStore";
 
 import App from "./App";
+import { startGetUser } from "./client/actions/userAction";
 
 const store = configureStore();
 console.log(store.getState());
@@ -13,6 +14,11 @@ console.log(store.getState());
 store.subscribe(() => {
   console.log(store.getState());
 });
+
+if (localStorage.getItem("authToken")) {
+  console.log("authtoken");
+  store.dispatch(startGetUser());
+}
 
 const jsx = (
   <Provider store={store}>

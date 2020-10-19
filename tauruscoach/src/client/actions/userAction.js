@@ -5,7 +5,28 @@ import Swal from "sweetalert2";
 export const setUser = (user) => {
   return { type: "SET_USER", payload: user };
 };
-
+export const startGetUser = () => {
+  return (dispatch) => {
+    axios
+      .get("/user/account", {
+        headers: {
+          auth: localStorage.getItem("authToken"),
+        },
+      })
+      .then((response) => {
+        const user = response.data;
+        console.log(user);
+        dispatch(setUser(user));
+      })
+      .catch((err) => {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: { err: "invalid Info" },
+        });
+      });
+  };
+};
 export const startRegisterUser = (formData, redirect) => {
   return (dispatch) => {
     axios
@@ -66,6 +87,23 @@ export const startLoginUser = (formData, redirect) => {
         }).then((result) => {
           if (result.isConfirmed) {
             localStorage.setItem("authToken", response.data.token);
+            axios
+              .get("/user/account", {
+                headers: {
+                  auth: localStorage.getItem("authToken"),
+                },
+              })
+              .then((response) => {
+                const user = response.data;
+                dispatch(setUser(user));
+              })
+              .catch((err) => {
+                Swal.fire({
+                  icon: "error",
+                  title: "Oops...",
+                  text: err,
+                });
+              });
 
             Swal.fire("You Successfully Login!");
             redirect();
@@ -75,5 +113,44 @@ export const startLoginUser = (formData, redirect) => {
         });
       }
     });
+  };
+};
+
+export const startLogoutUser = () => {
+  return (dispatch) => {
+    axios
+      .delete("/user/logout", {
+        headers: {
+          auth: localStorage.getItem("authToken"),
+        },
+      })
+      .then((response) => {
+        if (response.data.notice) {
+          Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Logout!",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              localStorage.removeItem("authToken");
+              dispatch(setUser({}));
+
+              Swal.fire("Logout!", "You succesfully logout.");
+              window.location.href = "/";
+            }
+          });
+        }
+      })
+      .catch((err) => {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: err,
+        });
+      });
   };
 };
