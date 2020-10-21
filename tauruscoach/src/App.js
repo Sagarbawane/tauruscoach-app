@@ -42,7 +42,7 @@ class App extends React.Component {
                   />{" "}
                 </Link>
               ) : (
-                <div>hello</div>
+                <div>hello,{this.props.user.userName}</div>
               )}
               <button
                 class="navbar-toggler"
@@ -156,10 +156,10 @@ class App extends React.Component {
                         class="dropdown-menu dropdown-menu-right"
                         aria-labelledby="navbarDropdown"
                       >
-                        <Link class="dropdown-item" to="#">
-                          Personal Details
+                        <Link class="dropdown-item" to="/dashboard">
+                          My Account
                         </Link>
-                        <Link class="dropdown-item" to="#">
+                        <Link class="dropdown-item" to="/">
                           My Subscription
                         </Link>
                         <Link

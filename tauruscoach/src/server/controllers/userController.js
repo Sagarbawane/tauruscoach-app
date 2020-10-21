@@ -34,7 +34,7 @@ userController.login = (req, res) => {
               id: user._id,
             };
             const token = jwt.sign(tokenData, "taurusCoach", {
-              expiresIn: "2d",
+              expiresIn: "1d",
             });
             res.json({
               token: token,
