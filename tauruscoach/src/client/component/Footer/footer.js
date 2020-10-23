@@ -28,11 +28,11 @@ function Footer() {
         </div>
       </div>
       <div className="container-fluid ">
-        <div className="footer">
-          <br />
-          <h5>Copyright © 2020 Taurus Coach|Developed by kitreek</h5>
-          <br />
-        </div>
+        <footer class="page-footer font-small blue">
+          <div class="footer-copyright text-center py-3">
+            <h5>Copyright © 2020 Taurus Coach|Developed by kitreek</h5>
+          </div>
+        </footer>
       </div>
     </div>
   );

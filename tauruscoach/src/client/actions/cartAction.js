@@ -80,7 +80,7 @@ export const startGetAddCartItem = (data) => {
         Swal.fire({
           icon: "error",
           title: "Oops...",
-          text: err,
+          text: "You are not logged in. Please log in to book the service.",
         });
       });
   };
@@ -117,13 +117,17 @@ export const startRemoveCartItem = (id) => {
             if (!result.isConfirmed) {
               Swal.fire(
                 "Cancelled",
-                "The task has been not been removed.",
+                "Service Had Not Been Remove From Cart.",
                 "error"
               );
             } else {
               const cart = response.data;
               dispatch(RemoveCartItem(cart._id));
-              Swal.fire("Removed!", "The task has been removed.", "success");
+              Swal.fire(
+                "Removed!",
+                "Service Has Been Remove From Cart.",
+                "success"
+              );
             }
           });
         }

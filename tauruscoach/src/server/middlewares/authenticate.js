@@ -17,7 +17,7 @@ const authenticateUser = (req, res, next) => {
       req.userId = tokenData.id;
       next();
     } catch (e) {
-      res.status("401").json({ error: e.message });
+      res.status("401").json("YOU SHOULD DO lOGIN fIRST");
     }
   } else {
     res.status("401").json({ error: "token not provided" });

@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Link } from "react-router-dom";
+import NotificationBadge from "react-notification-badge";
 import { connect } from "react-redux";
 import { startLogoutUser } from "./client/actions/userAction";
 import About from "./client/component/About/about";
@@ -22,6 +23,12 @@ class App extends React.Component {
     this.props.dispatch(startLogoutUser());
   };
   render() {
+    let cartItem = this.props.cart;
+    let value = cartItem.filter((ele) => {
+      if (ele.userId == this.props.user._id) {
+        return ele;
+      }
+    });
     return (
       <React.Fragment>
         <BrowserRouter>
@@ -181,6 +188,9 @@ class App extends React.Component {
                         class="fa fa-shopping-cart fa-2x"
                         aria-hidden="true"
                       ></i>
+                      {Object.keys(this.props.user).length != 0 && (
+                        <span class="cart-counter">{value.length}</span>
+                      )}
                     </div>
                   </Link>
                 </div>
@@ -210,6 +220,7 @@ class App extends React.Component {
 const mapStateToProps = (state) => {
   return {
     user: state.user,
+    cart: state.cart,
   };
 };
 
